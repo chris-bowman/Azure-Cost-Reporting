@@ -39,13 +39,14 @@ Two static tables have been added for VM size and Managed Disk capacity (future 
 
 ## Deploying the report
 ### Prerequisites
-- Enterprise Reader role in your Enterprise Enrollment
+- Enterprise Admin or Reader role in your Enterprise Enrollment
 - [Power BI Desktop](https://aka.ms/pbidesktopstore) installed
 
 ### Loading the data
 - Open the [Power BI template](./Azure%20Cost%20Management.pbit) in Power BI Desktop
 - When prompted for parameters, enter your Enrollment number (can be found in the Billing Account blade in the [Azure Portal](https://portal.azure.com)), how many months of data to load, and your Azure subscription offer (MS-AZR-0017P is the default Enterprise Agreement offer)
 ![Parameter Settings Image](images/ReportParams.png)
+- You will need to sign into the Azure Cost Management connector with your *Enterprise Admin* or *Enterprise Reader* Azure AD account.
 - Enjoy!
 - If you have Power BI service and licensing, you can also publish to a workspace and set up a recurring refresh schedule.
 
