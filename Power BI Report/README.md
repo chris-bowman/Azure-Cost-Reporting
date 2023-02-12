@@ -2,6 +2,8 @@
 
 This report has been developed over a number of years as a starting point for building Azure Cost reporting using the [Azure Cost Management Connector](https://learn.microsoft.com/en-us/power-bi/connect-data/desktop-connect-azure-cost-management). This is something I have created in my spare time to help customers visualise Azure costs.
 
+**Note: Currently the report only supports Enterprise Enrollments.**
+
 ![Sample Report Screenshot showing graphs and details of Azure usage](images/SampleReportSummary.png)
 
 ## Report Pages
@@ -30,6 +32,8 @@ It also shows reserved instances recommendations based on the RI Recommendations
 **Network Tab**: This tab shows actual costs for network over the past 30 days, and shows an approximate trend for total bandwidth in/out.
 
 **Compute Tab**: This tab shows compute trends over the past 30 days.
+
+**Price Sheet Tab**: This tab shows your enrollment price sheet for available subscription offers.
 
 ## Data Model
 Most of the tables in the Power BI connector are included, although to reduce data size, some large text columns have been excluded (these can be seen in the Power Query Editor).
