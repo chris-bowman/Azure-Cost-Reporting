@@ -2,7 +2,7 @@
 
 This report has been developed over a number of years as a starting point for building Azure Cost reporting using the [Azure Cost Management Connector](https://learn.microsoft.com/en-us/power-bi/connect-data/desktop-connect-azure-cost-management). This is something I have created in my spare time to help customers visualise Azure costs.
 
-> **Note: Microsoft Customer Agreement (MCA) Billing Account / Billing Profile support has been recently added. Please log an issue if there are any problems with it,**
+> **Note: Microsoft Customer Agreement (MCA) Billing Account / Billing Profile support has been recently added. Please log an issue if there are any problems with it**
 
 <br>
 
@@ -43,7 +43,9 @@ As this report is provided as a sample, support is limited to the latest version
 Most of the tables in the Power BI connector are included, although to reduce data size, some large text columns have been excluded (these can be seen in the Power Query Editor).
 Two static tables have been added for VM size and Managed Disk capacity (future scope to move these to API calls to auto-refresh).
 
-In order to introduce support for MCA customers, some columns have been renamed to match EA tables as the datamodel is different between EA and MCA.
+In order to introduce support for MCA customers, some columns have been renamed to match EA tables as the data model is different between EA and MCA.
+
+> **Note: In the table Subscriptions, there is a grouping column "SubscriptionGroup". You can modify these groups to group related subscriptions together and report based on this.**
 
 ![Report DataModel showing data tables and their relationships](Power%20BI%20Report/images/DataModel.png)
 
