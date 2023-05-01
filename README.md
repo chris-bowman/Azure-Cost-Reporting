@@ -68,7 +68,7 @@ In order to introduce support for MCA customers, some columns have been renamed 
     - For MCA Customers, Select *Manually Input Scope* or *Billing Profile Id* per [documentation](https://learn.microsoft.com/en-us/power-bi/connect-data/desktop-connect-azure-cost-management#connect-to-a-microsoft-customer-agreement-account), ScopeIdentifier as */providers/Microsoft.Billing/billingAccounts/{billingAccountId}[/billingProfiles/{billingProfileId}]*, substituting your billingAccountId and optionally provide billingProfileId (if you do use billingProfileId, make sure to remove the square brackets).<br>![Parameter Settings Image](Power%20BI%20Report/images/ReportParamsMCA.png)
 1. When prompted, you will need to sign into the Azure Cost Management connector with your *Enterprise Admin* or *Enterprise Reader* Azure AD account for EA customers, or appropriate Billing Account / Profile role for MCA customers.
 1. Enjoy!
-1. If you have Power BI service and licensing, you can also publish to a workspace and set up a recurring refresh schedule.
+1. If you have Power BI service and licensing, you can also share or publish to a workspace and set up a recurring refresh schedule. See [Ways to collaborate and share in Power BI](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) for details
 
 <br>
 --- <br>
