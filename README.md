@@ -2,8 +2,6 @@
 
 This report has been developed over a number of years as a starting point for building Azure Cost reporting using the [Azure Cost Management Connector](https://learn.microsoft.com/en-us/power-bi/connect-data/desktop-connect-azure-cost-management). This is something I have created in my spare time to help customers visualise Azure costs.
 
-> **Note: Microsoft Customer Agreement (MCA) Billing Account / Billing Profile support has been recently added. Please log an issue if there are any problems with it**
-
 <br>
 
 ![Sample Report Screenshot showing graphs and details of Azure usage](Power%20BI%20Report/images/SampleReportSummary.png)
@@ -69,6 +67,13 @@ In order to introduce support for MCA customers, some columns have been renamed 
 1. When prompted, you will need to sign into the Azure Cost Management connector with your *Enterprise Admin* or *Enterprise Reader* Azure AD account for EA customers, or appropriate Billing Account / Profile role for MCA customers.
 1. Enjoy!
 1. If you have Power BI service and licensing, you can also share or publish to a workspace and set up a recurring refresh schedule. See [Ways to collaborate and share in Power BI](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) for details
+
+<br>
+
+### Notes on groups/tags
+
+- **SubscriptionGroup**: In the _Subscriptions_ data table, you will find a group _SubscriptionGroup_. This can be modified to group subscriptions together (not unlike a flat management group) - this can be used for example in the all pages filters, or for another aggregation level.
+- **Resource Tags**: In the _Resources_ data table, the _Tags_ column reflects the last value from the _Usage Details_ data table, so 'most current' tag set. This will help group by current value. Some sample formulae have been added to extract tags from this, you can copy/modify these to make your own extracts. If you want historical tag values, the formula should work in the _Usage Details_ table as well, just modify the _SearchField_ variable to the correct Tags column.
 
 <br>
 --- <br>
