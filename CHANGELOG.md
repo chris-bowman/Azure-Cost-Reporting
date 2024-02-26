@@ -2,6 +2,13 @@
 
 ## Releases
 
+### v3.2:
+- [Link to template](Power%20BI%20Report/Azure%20Cost%20Management%20v3.2.pbit)
+- Fixed bug with AHB on summary screen and AHB tabs - VM cores were incorrectly matching to _VMSizes_ so were defaulting to 8 cores.
+- Extended _AHBUsage_ data table to all data for longer history.
+- Update tag formulas on Resources to correctly handle start/end tags in json.
+- Other misc changes (formatting, etc).
+
 ### v3.1:
 
 - [Link to template](Power%20BI%20Report/Azure%20Cost%20Management%20v3.1.pbit)
